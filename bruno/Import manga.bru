@@ -1,0 +1,19 @@
+meta {
+  name: Import manga
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/manga/import?id={{validId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  id: {{validId}}
+}
+
+settings {
+  encodeUrl: true
+}
